@@ -14,4 +14,4 @@ const hourSchema = new Schema<SchoolHour>(
 );
 
 // 2. Create the modal from the Schema
-export const entryModel = model<SchoolHour>("Hour", hourSchema);
+export const hourModel = model<SchoolHour>("Hour", hourSchema);
