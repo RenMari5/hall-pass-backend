@@ -4,6 +4,9 @@ export interface SchoolHour {
   dateAdded: string;
   schoolYear: string;
   schoolHour: string;
+  studentName: string;
   createdAt: string;
   updatedAt: string;
 }
+
+const arr: SchoolHour[] = [];
