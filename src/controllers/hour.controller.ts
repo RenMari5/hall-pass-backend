@@ -16,7 +16,7 @@ export async function getHours(req: Request, res: Response) {
 
 export async function getHour(req: Request, res: Response) {
   try {
-    const hour = await hourService.getEntry(req.params.id);
+    const hour = await hourService.getHour(req.params.id);
     if (!hour) return res.status(404).json("Entry not found");
     return res.status(200).json(hour);
   } catch (error) {
